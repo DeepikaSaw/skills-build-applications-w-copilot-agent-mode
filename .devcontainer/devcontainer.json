@@ -9,25 +9,15 @@
     "customizations": {
         "vscode": {
         "extensions": [
-            "github.copilot@insiders", // GitHub Copilot + Copilot Chat insiders
+            "github.copilot-insiders", // Fixed format
             "markdown-lint.markdownlinter",
-            "ms-python.python", // Python extension
-            "ms-python.vscode-pylance" // Pylance extension for Python
-        ]}
-    },
+            "ms-python.python",
+            "ms-python.vscode-pylance"
+        ]
+    }},
     "forwardPorts": [
-        3000, // React default port
-        8000, // Django default port
-        27017 // MongoDB default port
-    ],
-    "portAttributes": {
-        "3000": { // React port attributes
-        "label": "octofit-tracker",
-        "requireLocalPort": true
-      },      
-        "8000": { // Django port attributes
-        "label": "octofit-rest-api",
-        "requireLocalPort": true
-        }
-    }
+        3000,
+        8000,
+        27017
+    ]
 }
